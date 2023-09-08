@@ -1,0 +1,33 @@
+@import './../../app.scss';
+
+.banner_main_container{
+
+    height: 90vh;
+    width: 100%;
+    background-image:linear-gradient(to bottom left, #02393E95, #02393E),url('./banner1.jpg');;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // filter: blur(1px);
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+   
+
+    .banner-img{
+        height: 55%;
+        width: 45%;
+        background-image:linear-gradient(to bottom left, rgba(2, 57, 62, 0), rgba(2, 57, 62,0)),url('./banner2.jpg');;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: rotate(2deg);
+        transition: transform 0.3s ease-in-out;
+        border-radius: 5px;
+        box-shadow: $box-shadow;
+        &:hover{
+            cursor: pointer;            
+            transform: rotate(-2deg) scale(1.1);
+         
+        }
+    }
+
+}
